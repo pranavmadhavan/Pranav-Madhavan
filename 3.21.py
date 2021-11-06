@@ -25,24 +25,24 @@ k = 0;
 	
 
 while (k <= 0):
-		print("Enter a number greater than 0 \n"); 
+		print("Enter a number greater than 0"); 
 		k = int(input())  #Taking user input
 
 pid = os.fork(); #create child process
 
-if (pid == 0):  #for child process
-	        print("Child is working...\n");
-		print(k);
-		while (k != 1):
-		if (k%2 == 0): #when even
-		  k = k/2;
-		elif (k%2 == 1):   #when odd
-		  k = 3*(k) + 1;
-		print(k);
-		print("Child process is done.\n")
+if (pid == 0):#for child process
+        print("Child started...\n");
+        print(k);
+        while (k != 1):
+            if (k%2 == 0):  #when even
+                k = k/2;
+            elif (k%2 == 1):   #when odd
+                k = 3*(k) + 1;
+            print(k);
+        print("Child finished.\n")
 		
 else :          #for parent process
-	        print("Parent is waiting on child process...\n");
+	        print("Parent is waiting for child process to complete...\n");
 	        os.wait();  #Waits for child process to complete
-	        print("Parent process is completed.\n");
+	        print("Parent process finished.\n");
 
