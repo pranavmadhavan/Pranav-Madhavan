@@ -61,7 +61,7 @@ def maximum():  #function to calculate maximum
             i = i+1
         
             
-if __name__ == "__main__":  #start main process
+if __name__ == "__main__":  #main runs as parent thread
     #defining thread with target as corresponding functions
     thread1 = Thread(target = average)
     thread1.start()  #start thread 1
