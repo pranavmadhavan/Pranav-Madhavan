@@ -19,8 +19,6 @@ integer is passed on the command line'''
 
 
 import os
-
-n = 0
 k = 0
 	
 
