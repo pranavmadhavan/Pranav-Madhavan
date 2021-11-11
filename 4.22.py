@@ -13,7 +13,7 @@ The variables representing the average, minimum, and maximum values
 will be stored globally. The worker threads will set these values, and
 the parent thread will output the values once the workers have exited.
 
-Credits - https://gist.github.com/Jabiribn/e58bf13c678953891900e5f982b48037'''
+Credits - https://itprospt.com/qa/247165/write-in-c-program-write-a-multi-threaded-program'''
 
 
 from threading import Thread;
