@@ -77,7 +77,7 @@ if __name__ == "__main__":  #main runs as parent thread
     thread3.join()   #join thread 3
     
     #print minimum, maximum and average
-    print("The average value is ",round(avg))  
+    print("The average value is ",int(avg))  
     print("The minimum value is ",round(min)) 
     print("The maximum value is ",round(max)) 
     
