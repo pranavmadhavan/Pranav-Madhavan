@@ -11,7 +11,9 @@ The minimum value is 72
 The maximum value is 95
 The variables representing the average, minimum, and maximum values
 will be stored globally. The worker threads will set these values, and
-the parent thread will output the values once the workers have exited.'''
+the parent thread will output the values once the workers have exited.
+
+Credits - https://gist.github.com/Jabiribn/e58bf13c678953891900e5f982b48037'''
 
 
 from threading import Thread;
