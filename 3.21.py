@@ -15,7 +15,9 @@ parent and child processes have their own copies of the data, it will be
 necessary for the child to output the sequence. Have the parent invoke
 the wait() call to wait for the child process to complete before exiting
 the program. Perform necessary error checking to ensure that a positive
-integer is passed on the command line'''
+integer is passed on the command line
+
+Credits : https://github.com/SeanStaz/theCollatzConjecture.c/blob/master/hailstone.c'''
 
 
 import os
